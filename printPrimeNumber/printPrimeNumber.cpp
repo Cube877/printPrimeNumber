@@ -31,7 +31,7 @@ int main()
 		if (checkPrimeNumber(i) == 1) {
 			cout << "PrimeNumber: " << i << endl;
 		}
-		if (i % 2 != 0) {               //若2不是因数,跳过偶数
+		if (i % 2 != 0) {                //若2不是因数,跳过偶数
 			i++;
 		}
 	}
