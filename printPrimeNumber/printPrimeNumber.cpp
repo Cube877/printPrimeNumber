@@ -17,7 +17,7 @@ int checkPrimeNumber(int n) {
 		if (n%i == 0) {
 			return 0;
 		}
-		if (i % 2 != 0) {
+		if (i % 2 != 0) {        //若能不能被2整除,跳过偶数
 			i++;
 		}
 	}
@@ -30,9 +30,6 @@ int main()
 	for (int i = 2; i <= totalnum; i++) {
 		if (checkPrimeNumber(i) == 1) {
 			cout << "PrimeNumber: " << i << endl;
-		}
-		if (i % 2 != 0) {                //若2不是因数,跳过偶数
-			i++;
 		}
 	}
 
